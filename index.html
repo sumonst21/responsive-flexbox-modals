@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--Code By Webdevtrick ( https://webdevtrick.com )-->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Flexbox-based Modal | Webdevtrick.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="modals">
+
+      <h2>Responsive Flexbox-Based Modals</h2>
+      <p>Passing data-attributes!</p>
+      
+      <ul>
+        <li><a class="sm_open" data-modal="examplePlain" data-effect="pushdown">Modal Plain</a></li>
+        <li><a class="sm_open" data-modal="exampleAdvanced" data-effect="pushup" data-icons="is_right" data-header-type="detached">Modal (w/Detached Header and Right Icon Menu)</a></li>
+        <li><a class="sm_open" data-modal="exampleAdvanced" data-effect="pushup" data-icons="is_right">Modal (w/Header and Right Icon Menu)</a></li>
+        <li><a class="sm_open" data-modal="exampleAdvanced" data-effect="pushup" data-icons="is_left">Modal (w/Header and Left Icon Menu)</a></li>
+        <li>
+          <a class="sm_open" data-modal="exampleData" data-effect="pushdown" data-header="#1 This header is from the link" data-overlay="none" data-content="This is a sample HTML string being passed with a data-attribute... <p><h3>Super easy to change, simply by tweaking the button launching the modal.</h3></p>"
+            data-container-color="green">Modal (Passing Data-Attributes w/Transparent Overlay)
+				</a>
+        </li>
+        <li>
+          <a class="sm_open" data-modal="exampleData" data-effect="pushdown" data-header="#1 This header is from the link" data-overlay="red" data-content="This is a sample HTML string being passed with a data-attribute... <p><h3>Super easy to change, simply by tweaking the button launching the modal.</h3></p>"
+            data-container-color="red">Modal (Passing Data-Attributes w/Eye-Searing Red Overlay Color)
+				</a>
+        </li>
+        <li>
+          <a class="sm_open" data-modal="exampleData" data-effect="pushup" data-header="#1 This header is from the link" data-content="This is a sample HTML string being passed with a data-attribute... <p><h3>Super easy to change, simply by tweaking the button launching the modal.</h3></p>"
+            data-container-color="tan">Modal (Passing Data-Attributes w/HTML)
+				</a>
+        </li>
+        <li>
+          <a class="sm_open" data-modal="exampleData" data-effect="pushdown" data-header="#2 This header is from the link" data-content="....and this is a second sample string being passed with a data-attribute attached to the button." data-container-color="red">Modal (Passing Data-Attributes #1)
+				</a>
+        </li>
+        <li>
+          <a class="sm_open" data-modal="exampleData" data-effect="pushdown" data-header="#3 This header is from the link" data-content="...and this is yet another sample string being passed with a data-attribute attached to the button. I'm just typing this sentence to give a little more bulk to the modal...not filling it with important info, but making it stand out from the other examples a bit more."
+            data-container-color="green">Modal (Passing Data-Attributes #2)
+				</a>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="slim_modal" id="examplePlain">
+      <div class="sm_content">
+        <div class="sm_content_inner_wrap">
+          <div class="sm_area_top">
+            <h3>Example Modal Content
+								<span>...for this CSS Demo</span>
+							</h3>
+          </div>
+          <div class="sm_area_bottom">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nihil asperiores recusandae odio distinctio earum voluptatibus, quisquam repellendus voluptas quaerat quis est totam, optio quia, molestias voluptatum error libero pariatur!</p>
+          </div>
+          <a class="sm_close sm_close_button">CLOSE</a>
+        </div>
+      </div>
+    </div>
+    <div class="slim_modal" id="exampleAdvanced">
+      <div class="sm_content">
+        <div class="sm_header">Hi. I'm a Header.</div>
+        <div class="sm_icon_menu">
+          <ul>
+            <li class="sm_close"><i class="fa fa-times fa-fw "></i></li>
+            <li><i class="fa fa-gear fa-fw"></i></li>
+            <li><i class="fa fa-plus fa-fw"></i></li>
+            <li><i class="fa fa-sitemap fa-fw"></i></li>
+            <li><i class="fa fa-user fa-fw"></i></li>
+          </ul>
+        </div>
+        <div class="sm_content_inner_wrap">
+          <div class="sm_area_top">
+            <h3>Example Modal Content
+							<span>...for this CSS Demo</span>
+						</h3>
+          </div>
+          <div class="sm_area_bottom">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nihil asperiores recusandae odio distinctio earum voluptatibus, quisquam repellendus voluptas quaerat quis est totam, optio quia, molestias voluptatum error libero pariatur!</p>
+          </div>
+          <div class="sm_close sm_close_button">CLOSE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slim_modal" id="exampleData">
+      <div class="sm_content">
+        <div class="sm_header"></div>
+        <div class="sm_icon_menu is_right">
+          <ul>
+            <li class="sm_close"><i class="fa fa-times fa-fw "></i></li>
+          </ul>
+        </div>
+        <div class="sm_content_inner_wrap">
+          <div class="sm_area_all"></div>
+          <a class="sm_close sm_close_button">CLOSE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script  src="index.js"></script>
+
+</body>
+</html>
